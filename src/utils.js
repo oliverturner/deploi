@@ -8,7 +8,7 @@ import { prerelease, clean } from "semver";
 export function onExec(error, stdout, stderr) {
   if (error) {
     console.error(`error: ${error.message}`);
-    return process.exit(1);
+    // return process.exit(1);
   }
 
   if (stderr) {
