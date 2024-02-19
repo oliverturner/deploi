@@ -2,14 +2,14 @@
 
 ## Description
 
-`deploi` is tiny module that combines `athloi`'s `version` and `publish` commands to allow npm workspace-based monorepos to publish packages to npm in a single step.
+`deploi` is tiny cli tool that combines the functionality of `athloi`'s `version` and `publish` commands to allow npm workspace-based monorepos to publish their public packages to npm in a single step.
 
-The `-v` or `--version` option is parsed with [semver](https://github.com/npm/node-semver) to determine the appropriate tag: if it contains `alpha`, `beta`, or similar, it will be published as a pre-release version.
+The `--version` option is parsed with [semver](https://github.com/npm/node-semver) to determine the appropriate tag: if it contains `alpha`, `beta`, or similar, it will be published as a pre-release version.
 
 ## Requirements
 
 - Node.js 18 or later
-- A version of the npm cli that supports workspaces
+- npm 8 or later
 
 ## Examples
 
